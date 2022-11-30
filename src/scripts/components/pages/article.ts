@@ -1,5 +1,4 @@
-import { elementMap } from "./../constants";
-export const article = document.createElement(elementMap.article);
+export const article = document.createElement("article");
 article.id = "about";
 article.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet risus feugiat in ante metus. Montes nascetur ridiculus mus mauris vitae. Massa ultricies mi quis hendrerit dolor. A condimentum vitae sapien pellentesque habitant morbi tristique. Vulputate mi sit amet mauris commodo quis imperdiet massa. Consequat nisl vel pretium lectus quam. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Diam volutpat commodo sed egestas egestas fringilla. Viverra tellus in hac habitasse platea dictumst. Scelerisque varius morbi enim nunc faucibus a pellentesque. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Arcu non odio euismod lacinia at quis risus. Fusce ut placerat orci nulla pellentesque dignissim enim. Cursus eget nunc scelerisque viverra mauris. Sit amet porttitor eget dolor. Vestibulum morbi blandit cursus risus at.`
 

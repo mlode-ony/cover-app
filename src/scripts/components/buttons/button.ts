@@ -1,15 +1,14 @@
-import { toggleScheme } from "../../events/scheme";
+import { onClickScheme } from "../../events/onClickScheme";
 import { ICON_DARK } from "../constants";
+import { ICON_CLASS } from "./../constants";
 
-
-const ELEMENT = "button";
 const TYPE = "button";
 const TEXT = "Toggle color scheme"; 
-const CLASS_NAME = "material-symbols-outlined"; 
-export const button = document.createElement(ELEMENT);
-button.type = TYPE;
-button.className = CLASS_NAME;
-button.title = TEXT; 
-button.textContent = ICON_DARK;		// if color-scheme: light
 
-toggleScheme(button);
+export const button = document.createElement("button");
+button.type = TYPE;
+button.className = ICON_CLASS;
+button.title = TEXT; 
+button.textContent = ICON_DARK;		// default if color-scheme: light
+
+onClickScheme(button);

@@ -1,6 +1,5 @@
 
-const ELEMENT = "header";
 const TITLE = "Headline";
 
-export const header = document.createElement(ELEMENT);
+export const header = document.createElement("header");
 header.textContent = TITLE;

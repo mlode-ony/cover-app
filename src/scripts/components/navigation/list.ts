@@ -1,16 +1,15 @@
-const CLASS = 'nav-list--hide';
-const UL = 'ul';
-const LI = 'li';
+import { idList, navClassMap } from "./../constants";
 
-export const ul = document.createElement(UL);
+export const ul = document.createElement("ul");
 
-const itemList = ["about", "projects", "contact"];
+ul.className = navClassMap.hide;
 
-ul.className = CLASS;
-
-for (const item of itemList) {
-	const li = document.createElement(LI);
-	li.id = item;
-	li.textContent = item;
+for (const item of idList) {
+	let li = document.createElement("li");
+	let a = document.createElement("a");
+	a.href = '#'.concat(item);
+	a.textContent = item;
+	li.appendChild(a);
 	ul.appendChild(li);
+
 }

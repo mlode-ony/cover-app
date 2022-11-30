@@ -1,7 +1,7 @@
-import { CLICK, ICON_DARK, ICON_LIGHT, SCHEME_DARK, SCHEME_LIGHT } from "./../components/constants";
+import { CLICK, ICON_DARK, ICON_LIGHT, SCHEME_DARK, SCHEME_LIGHT } from "../components/constants";
 
 
-export const toggleScheme = (element: HTMLButtonElement) => {
+export const onClickScheme = (element: HTMLElement) => {
 
 	let bodyScheme = document.body.attributes[0];
 

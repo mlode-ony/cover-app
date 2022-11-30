@@ -1,10 +1,9 @@
-import { menuIcon } from "../icons/menuIcon";
-import { showMenu } from "./../../events/showMenu";
-import { elementMap } from "./../constants";
+import { onClickMenu } from "../../events/onClickMenu";
 import { ul } from "./list";
+import { menuIcon } from "./menuIcon";
 
-export const nav = document.createElement(elementMap.nav);
+export const nav = document.createElement("nav");
 nav.appendChild(menuIcon);
 nav.appendChild(ul);
 
-showMenu(menuIcon, ul);
+onClickMenu(menuIcon, ul);

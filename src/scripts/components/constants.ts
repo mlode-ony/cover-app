@@ -11,25 +11,5 @@ export const navClassMap = {
 	show: "nav-list--show"
 };
 
-export const elementMap = {
-	header: "header",
-	nav: "nav",
-	div: "div",
-	main: "main",
-	footer: "footer",
-	button: "button",
-	span: "span",
-	article: "article",
-	ul: "ul",
-	li: "li",
-	a: "a",
-	h1: "h1",
-	h2: "h2",
-	h3: "h3",
-	h4: "h4",
-	h5: "h5",
-	h6: "h6",
-	p: "p",
-};
 
-
+export const idList = ["about", "projects", "contact"];

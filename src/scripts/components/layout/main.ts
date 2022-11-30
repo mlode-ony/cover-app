@@ -1,7 +1,5 @@
 import { article } from "./../pages/article";
-const ELEMENT = "main";
 
-
-export const main = document.createElement(ELEMENT); 
+export const main = document.createElement("main"); 
 
 main.appendChild(article);
