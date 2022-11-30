@@ -1,0 +1,35 @@
+#app {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 0.4fr 2.2fr 0.4fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	justify-items: stretch;
+	align-items: stretch;
+	grid-template-areas:
+		"header nav button"
+		"main main main"
+		"footer footer footer";
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: nav;
+}
+
+button {
+	grid-area: button;
+}
+
+main {
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}

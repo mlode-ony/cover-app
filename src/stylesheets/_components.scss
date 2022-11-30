@@ -1,0 +1,14 @@
+#nav-menu:hover {
+	border: 1px solid blue;
+	cursor: pointer;
+}
+
+.nav-list--show > li {
+	display: block; 
+	font-size: 12px; 
+	text-decoration: none;
+}
+
+.nav-list--hide {
+	display: none;
+}

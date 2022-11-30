@@ -1,0 +1,131 @@
+$background--dark: hsl(208, 37%, 20%);
+$color--dark: hsl(0, 0%, 100%);
+$background--light: hsl(0, 0%, 100%);
+$color--light: hsl(208, 37%, 20%);
+
+
+$font-size: 1em;
+$font-weight: 500;
+
+$font-family-sans: 'Lato', sans-serif;
+$font-family-serif: 'Solway', serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: $font-family-sans;
+  font-size: $font-size;
+  font-weight: $font-weight;
+
+
+  &[color-scheme$="light"] {
+    color: $color--light;
+    background-color: $background--light;
+
+    button {
+      color: $color--light;
+    }
+  }
+
+  &[color-scheme$="dark"] {
+    color: $color--dark;
+    background-color: $background--dark;
+
+    button {
+      color: $color--dark;
+    }
+  }
+}
+
+
+a:link:visited:hover:active {
+  text-decoration: none;
+}
+
+/* TYPING */
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  text-shadow: 4px 2px 6px rgba(154, 154, 154, 1);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  letter-spacing: 1px;
+  text-align: justify;
+  text-shadow: 4px 2px 3px rgba(154, 154, 154, 1);
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+
+h5 {
+  font-size: 0.875em;
+}
+
+h6,
+p {
+  font-size: 0.75em;
+}
+
+p {
+  text-shadow: none;
+}
+
+ul,
+ol,
+li {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+span {
+  cursor: pointer;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid violet;
+} 
+
+article {
+  padding: 10px 10px; 
+  text-align: justify; 
+  font-size: 20px;
+}
