@@ -6,6 +6,11 @@ export const SCHEME_LIGHT = 'scheme--light';
 export const SCHEME_DARK = 'scheme--dark';
 export const ICON_CLASS = "material-symbols-outlined";
 
+export const navClassMap = {
+	hide: "nav-list--hide",
+	show: "nav-list--show"
+};
+
 export const elementMap = {
 	header: "header",
 	nav: "nav",
@@ -17,10 +22,14 @@ export const elementMap = {
 	article: "article",
 	ul: "ul",
 	li: "li",
-	a: "a"
+	a: "a",
+	h1: "h1",
+	h2: "h2",
+	h3: "h3",
+	h4: "h4",
+	h5: "h5",
+	h6: "h6",
+	p: "p",
 };
 
-export const navClassMap = {
-	hide: "nav-list--hide",
-	show: "nav-list--show"
-}; 
+
