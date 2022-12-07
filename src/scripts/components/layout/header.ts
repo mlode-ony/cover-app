@@ -1,5 +1,4 @@
-
-const TITLE = "Headline";
+// import { object } from "../objects/logo";
 
 export const header = document.createElement("header");
-header.textContent = TITLE;
+// header.appendChild(object);

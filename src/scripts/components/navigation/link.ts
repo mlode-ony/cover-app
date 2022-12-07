@@ -1,1 +1,0 @@
-export const link = document.createElement("a");

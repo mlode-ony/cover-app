@@ -1,4 +1,4 @@
-import { article } from "./../pages/article";
+import { article } from "../containers/article";
 
 export const main = document.createElement("main"); 
 

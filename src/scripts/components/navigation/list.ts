@@ -1,15 +1,20 @@
-import { idList, navClassMap } from "./../constants";
+import { HASH, idList, navClassMap } from "./../constants";
 
 export const ul = document.createElement("ul");
 
 ul.className = navClassMap.hide;
 
-for (const item of idList) {
-	let li = document.createElement("li");
+const CLASS: string = 'route';
+
+idList.forEach(id => {
 	let a = document.createElement("a");
-	a.href = '#'.concat(item);
-	a.textContent = item;
+	id === "home" ?
+		a.href = "" : a.href = HASH.concat(id);
+	a.id = id;
+	a.className = CLASS;
+	a.textContent = id.toUpperCase();
+	let li = document.createElement("li");
 	li.appendChild(a);
 	ul.appendChild(li);
+});
 
-}

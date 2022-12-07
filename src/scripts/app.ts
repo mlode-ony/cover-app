@@ -4,11 +4,16 @@ import { footer } from './components/layout/footer';
 import { header } from './components/layout/header';
 import { main } from './components/layout/main';
 import { nav } from './components/navigation/nav';
+import onLoadScheme from './events/onLoadScheme';
 
-const app = document.getElementById('app')!;
+onLoadScheme();
+const app = document.querySelector('#app')!;
 let appElemList = [header, nav, divButton, main, footer];
 
 appElemList.forEach(element => {
 	app?.appendChild(element);
 });
+
+
+
 
