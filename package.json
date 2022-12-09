@@ -3,7 +3,8 @@
   "author": "aw",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "module", 
+  "repository": "https://github.com/mlode-ony/cover-app",  
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

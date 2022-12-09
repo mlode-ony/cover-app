@@ -1,8 +1,7 @@
 import { button } from "../buttons/button";
 
-const CLASS_NAME = "button";
 
-export const divButton = document.createElement("div");
-divButton.className = CLASS_NAME; 
+export const divButton = document.createElement("div") as HTMLElement;
+divButton.className = "container-button"; 
 
-divButton.appendChild(button);
+divButton.append(button);

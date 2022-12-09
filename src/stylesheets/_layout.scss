@@ -18,7 +18,8 @@
 
 header {
 	grid-area: header; 
-	border: 2px dashed dodgerblue;
+	background: dodgerblue; 
+	border: 2px inset darkturquoise;
 }
 
 nav {
@@ -26,7 +27,7 @@ nav {
 
 }
 
-.button {
+div.container-button {
 	grid-area: button;
 }
 
@@ -38,7 +39,7 @@ footer {
 	grid-area: footer;
 } 
 
-nav, .button	{
+nav, div[class$=button]	{
 	display: block; 
 	margin: auto auto;
 } 

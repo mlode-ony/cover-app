@@ -1,5 +1,5 @@
 import { article } from "../containers/article";
 
-export const main = document.createElement("main"); 
+export const main = document.createElement("main") as HTMLElement; 
 
-main.appendChild(article);
+main.append(article);
