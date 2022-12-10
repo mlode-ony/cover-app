@@ -1,4 +1,6 @@
-
+/* 
+	return an event state value after triggering a popstate event
+*/
 
 export const onPopstate = () => {
 	window.addEventListener("popstate", event => {
@@ -6,4 +8,4 @@ export const onPopstate = () => {
 			return event.state;
 		}
 	})
-}
+} 

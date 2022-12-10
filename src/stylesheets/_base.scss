@@ -1,8 +1,8 @@
 $background--dark: hsl(208, 37%, 20%);
 $color--dark: hsl(0, 0%, 100%);
 $background--light: hsl(48, 100%, 93%);
-$color--light: hsl(208, 37%, 20%); 
-$light: "light"; 
+$color--light: hsl(208, 37%, 20%);
+$light: "light";
 $dark: "dark";
 
 
@@ -26,24 +26,6 @@ html {
   width: $size-default;
   height: $size-default;
 
-  &[color-scheme$=light] {
-    color: $color--light;
-    background-color: $background--light;
-
-    button {
-      color: $color--light;
-    }
-  }
-
-  &[color-scheme$=dark] {
-    color: $color--dark;
-    background-color: $background--dark;
-
-    button {
-      color: $color--dark;
-    }
-  }
-
 
   body {
     width: $size-default;
@@ -51,6 +33,24 @@ html {
     font-family: $font-family-sans;
     font-size: $font-size;
     font-weight: $font-weight;
+
+    &[data-scheme$=light] {
+      color: $color--light;
+      background-color: $background--light;
+
+      button {
+        color: $color--light;
+      }
+    }
+
+    &[data-scheme$=dark] {
+      color: $color--dark;
+      background-color: $background--dark;
+
+      button {
+        color: $color--dark;
+      }
+    }
   }
 }
 
@@ -117,7 +117,7 @@ p {
 
 ul,
 ol {
-  & > li {
+  &>li {
     list-style: none;
     cursor: pointer;
   }
